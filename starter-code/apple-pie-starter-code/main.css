@@ -1,52 +1,70 @@
 *{
   margin: 0 auto;
   padding: 0 auto;
-  margin-left: auto;
-  margin-right:auto;
-  width: 80%;
   font-family: "Open Sans";
   color: #5A5A5A;
-}
-
-ul{
-   list-style-type: none;
+  justify-content: center;
 
 }
 
-h1{
+.header{
+  color: white;
+  height: 700px;
+  background: url(images/apple-pie.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header h1{
   color: white;
   font-weight: 300;
   font-size: 4em;
-  /*
-  background-image: url(images/apple-pie.jpg);
-  background-position:center;
-  background-size: 70%;
-  background-repeat:no-repeat;
-  align-items:center;
-  */
 
-  height: auto;
-  display: block;
-  position: absolute;
-  top: 280px;
-
-  left: 500px;
 }
 
 p{
   font-size: 1.2em;
   margin: 20px;
-  width: 90%;
+  width: 80%;
 }
 
-.cooking-info{
+.info-1{
+  border-bottom: 1px solid #5A5A5A;
+  height: 110px;
   align-self: center;
-  width: 50%;
 }
 
 .apple-pie{
   margin-top:20px;
   width: 100%;
   margin-bottom: 20px;
+  align-items: center;
 
+}
+
+.Ingredients ul li{
+  width: 80%;
+  list-style-type: none;
+}
+
+.Ingredients li:before{
+  content: "- ";
+}
+
+.Directions li:before{
+  list-style-type: none;
+  content: ") ";
+}
+
+.Directions ol li{
+  width: 80%;
+}
+
+.info-2{
+  border-bottom: 1px solid #5A5A5A;
+  height: 110px;
+  align-self: center;
 }
