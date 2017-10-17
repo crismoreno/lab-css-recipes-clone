@@ -1,12 +1,11 @@
+/*-------ALL-------*/
 *{
   margin: 0 auto;
   padding: 0 auto;
   font-family: "Open Sans";
-  color: #5A5A5A;
-  justify-content: center;
-
+  box-sizing: border-box;
 }
-
+/*-------HEADER-------*/
 .header{
   color: white;
   height: 700px;
@@ -21,50 +20,111 @@
 .header h1{
   color: white;
   font-weight: 300;
-  font-size: 4em;
-
+  font-size: 4.5em;
 }
 
-p{
-  font-size: 1.2em;
-  margin: 20px;
-  width: 80%;
+
+/*-------GENERAL CONTAINER-------*/
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 800px;
+  min-width: 200px;
+  margin-bottom: 50px;
 }
 
-.info-1{
+/*-------ROLLAZO-------*/
+.main p{
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.main{
   border-bottom: 1px solid #5A5A5A;
-  height: 110px;
-  align-self: center;
 }
 
-.apple-pie{
-  margin-top:20px;
-  width: 100%;
-  margin-bottom: 20px;
+/*-------INFO-PIC-ONE-------*/
+.img-1 .info-1{
+  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 
 }
 
-.Ingredients ul li{
-  width: 80%;
+.img-1{
+display: block;
+text-align: center;
+margin: 0 auto;
+}
+/*-------INGREDIENTS-------*/
+
+.ingredients {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 800px;
+  min-width: 200px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #5A5A5A;
+}
+.ingredients ul li{
   list-style-type: none;
 }
-
-.Ingredients li:before{
+.ingredients li:before{
   content: "- ";
 }
 
-.Directions li:before{
-  list-style-type: none;
-  content: ") ";
+.ingredients ul{
+margin-bottom: 25px;
 }
 
-.Directions ol li{
+.ingredients h2{
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #5A5A5A;
+  font-weight: 300;
+  position: relative;
+  left: 20px;
+}
+
+/*-------DIRECTIONS-------*/
+.directions ol >li:before{
+  content: counter(list, decimal) ") ";
+  counter-increment: list;
+}
+
+.directions ol >li{
   width: 80%;
+  list-style: none;
 }
 
-.info-2{
-  border-bottom: 1px solid #5A5A5A;
-  height: 110px;
-  align-self: center;
+.directions ol{
+  counter-reset: list;
+  position: relative;
+  right: 90px;
+}
+
+.directions h2{
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #5A5A5A;
+  font-weight: 300;
+  position: relative;
+  left: 20px;
+}
+
+.directions{
+
+}
+
+/*-------INFO-PIC-2-------*/
+.img-2 .info-2{
+
+
+}
+
+.img-2{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
